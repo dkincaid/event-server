@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <servlet>
+        <display-name>EventServer</display-name>
+        <servlet-name>EventServer</servlet-name>
+        <servlet-class>com.idexx.event_server.EventServer</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventServer</servlet-name>
+        <url-pattern>/replay/*</url-pattern>
+    </servlet-mapping>
+</web-app>
